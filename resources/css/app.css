@@ -1,13 +1,11 @@
 @tailwind base;
-
-input:invalid, textarea:invalid, select:invalid {
-    box-shadow: none;
-}
-
 @tailwind components;
-
 @tailwind utilities;
 
 [x-cloak] {
     display: none;
+}
+
+input:invalid, textarea:invalid, select:invalid {
+    box-shadow: none;
 }

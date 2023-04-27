@@ -1,4 +1,4 @@
-# Laravel 8 Livewire 分享環境設定敏感資訊
+# Laravel 10 Livewire 分享環境設定敏感資訊
 
 讓其他開發者知道有哪些環境變數需要設定，隨時同步環境設定是有助於開發的。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 執行第一次應用程式設置指令後，可以輕鬆地再次同步環境設定。
 ```sh
@@ -34,8 +38,8 @@ $ npx envault
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/LWypZQQ.png)
+![](https://i.imgur.com/ReMhJY4.png)
 > 建立新的帳號
 
-![](https://i.imgur.com/hYNeyuQ.png)
+![](https://i.imgur.com/DNP7rFH.png)
 > 環境變數通常以大寫字元來表示
